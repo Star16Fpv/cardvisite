@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image en Plein Écran</title>
+    <style>
+        /* Assurez-vous que le corps et l'html prennent toute la hauteur de l'écran */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Évite les barres de défilement */
+        }
+        /* Style pour l'image en plein écran */
+        .fullscreen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Vue du viewport en largeur */
+            height: 100vh; /* Vue du viewport en hauteur */
+            object-fit: cover; /* Ajuste l'image pour couvrir l'écran */
+        }
+    </style>
+</head>
+<body>
+    <img src="sept. 16,2.jpg" alt="Image Plein Écran" class="fullscreen-image">
+</body>
+</html>
