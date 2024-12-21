@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>visit card</title>
+    <title>Carte de visite</title>
     <style>
         /* Assurez-vous que le corps et l'html prennent toute la hauteur de l'écran */
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Évite les barres de défilement */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black; /* Couleur de fond */
+            font-family: Arial, sans-serif;
         }
-        /* Style pour l'image adaptée à l'écran */
-        .fullscreen-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+
+        /* Style pour l'image */
+        .card-image {
+            max-width: 90%;
+            max-height: 70%;
             object-fit: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
-            background-color: black; /* Optionnel : Couleur de fond pour les espaces vides */
+        }
+
+        /* Conteneur des coordonnées */
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+            color: white; /* Texte en blanc */
+        }
+
+        .contact-info h1 {
+            margin: 5px 0;
+            font-size: 1.5em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1em;
+            line-height: 1.5em; /* Amélioration de l'espacement des lignes */
+        }
+
+        .contact-info a {
+            color: #1e90ff; /* Couleur des liens */
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <img src="sept. 16,2.jpg" alt="Image Adaptée à l'Écran" class="fullscreen-image">
+    <!-- Image de la carte -->
+    <img src="sept. 16,2.jpg" alt="Image de la carte de visite" class="card-image">
+
+    <!-- Coordonnées -->
+    <div class="contact-info">
+        <h1>Karm Martial 🇨🇵</h1>
+        <p>Téléphone : 00 41 78 303 26 50</p>
+
+        <h1>Roncari Ariane 🇨🇭🇨🇵🇮🇹</h1>
+        <p>Téléphone : 00 41 78 301 19 88</p>
+
+        <p>Mail : <a href="mailto:rbs.roncari@gmail.com">rbs.roncari@gmail.com</a></p>
+
+        <p>Bureau :<br>
+        Kägenstrasse 14<br>
+        4153 Reinach<br>
+        Suisse</p>
+
+        <p>Notes :<br>
+        Brand und Wasserschaden Sanierungen</p>
+    </div>
 </body>
 </html>
